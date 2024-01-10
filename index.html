@@ -1,18 +1,19 @@
-
+<!-- HTML Code used to structure Login and Sign Up page-->
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>I SPY</title>
-  <link href="sign-up.css" rel="stylesheet" type="text/css" />
+  <title>I SPY</title> <!-- Title of page which renders in the webbrowser-->
+  <link href="sign-up.css" rel="stylesheet" type="text/css" /><!-- Links HTML to external CSS file-->
 </head>
-<body>
+<body><!-- Main section of page-->
   <h1><center>I SPY</Center></h1>
   <div class="container">
   <div class="container">
-    <h2>Login</h2>
+
+    <h2>Login</h2><!-- Login Section of page -->
   
     <form id="I-SPY" action="" >
       <div class="form-group">
@@ -25,13 +26,15 @@
       </div>
       <div class="form-group">
         
-    <button type="submit">Login</button>
+    <button type="submit"><a href="Homepage.html">Login</a></button><!-- Button to be clicked after login details are entered, 
+      firebase authenticates these details entered by the user with those in the firebase database ( realtime )-->
       </div>
     </form>
 
 
   <div>
-      <h2>Sign Up</h2>
+    <!-- Sign Up Section of page -->
+    <h2>Sign Up</h2>
     <form>
       <div class="form-group">
         <label for="name">Name:</label>
@@ -46,16 +49,20 @@
         <input type="password" id="password" name="password" placeholder="Enter your password">
       </div>
       <div class="form-group">
-        <button type="submit" onclick="save()" >Sign Up</button>
+        <button type="submit" onclick="save()" ><a href="Homepage.html">Sign Up</a></button><!-- Button to be clicked after login 
+          details are entered, details entered by user are saved to firebase database( realtime )-->
       </div>
     </form>
   
   </div>
-<body/>
+</body>
 
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script>
+<!-- Trio of script tags added at the bottom of the page, linking the HTML page to an external Javascript page
+ -->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script><!--Links to the firebase application-->
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js"></script> <!--Links to the firebase database (realtime)-->
 <script src="script.js"></script>
+
   
 
 </html>

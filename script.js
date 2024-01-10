@@ -15,15 +15,24 @@ firebase.initializeApp(firebaseConfig);
 // reference your database variable
 var database = firebase.database()
 
-function save() {
-  var name = document.getElementById('name').value
-  var email = document.getElementById('email').value
-  var password = document.getElementById('password').value
 
-  database.ref('users/' + name).set({
-    name : name,
-    email : email,
-    password : password
-    
- })
-}
+//Class for users
+class User {
+    constructor(name, email, password) {
+      this.name = name;
+      this.email = email;
+      this.password = password;
+        // Function to save sign-up details
+        function save() {
+        var name = document.getElementById('name').value
+        var email = document.getElementById('email').value
+        var password = document.getElementById('password').value
+
+        database.ref('users/' + name).set({
+            name : name,
+            email : email,
+            password : password
+            
+  })
+      
+}}}
