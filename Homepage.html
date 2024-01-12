@@ -1,27 +1,69 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>I Spy</title>
-  <link href="style.css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <title>I Spy Homepage</title>
+  <!--Name of Homepage-->
+  <link href="Homepage.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 </head>
-
 <body>
-  
   <div class="header">
-  <h1></h1>
+    <h1><img src="ISpy.png" class="logo"> I Spy With My Little Eye...</h1>
+    <div class="navigation-icons">
+      <i class="fa fa-heart" style="font-size:24px; margin-right: 10px;"></i> <!-- Heart icon -->
+      <i class="fa fa-shopping-bag" style="font-size:24px;"></i> <!-- Shopping bag icon -->
+    </div>
+  </div>
+  <div class="Featured_Products">
+    <h2>Featured Products</h2>
+  </div>
+<div class="Products">
+  <div class="Product1">
+  <a href="https://www.nike.com/gb/t/sportswear-tech-fleece-joggers-ttKH9n/FB8002-450" id=1 name="Nike Blue Tech Fleece Joggers"  brand="Nike" price="49.99">
+    <img src="sportswear-tech-fleece-joggers.png" width="200px" height="200px">
+  </a>
+  <p>Nike Blue Tech Fleece Joggers <b>£49.99</b></p>
+  <p><i class="fa fa-heart" style="font-size:36px;"></i> <i class="fa fa-shopping-bag" style="font-size: 36px; position: 10px;"></i> 
 </div>
-  <div class="header">
-  <h2><img src="C:\Users\Student Account\Downloads\ISpy.png" class="logo"> I Spy With My Little Eye...</h2>
-  <div class="shopping-bag-icon"></div> 
+
+<div class="Product2">
+  <a href="https://www.adidas.co.uk/adicolor-classics-sst-track-top/IM4545.html" id=1 name="adicolor-classics-sst-track-top"  brand="Adidas" price="65">
+    <img src="Adidas SST Track suit top.PNG" width="200px" height="200px">
+  </a>
+  <p> Adidas SST Track Top Black<b>£65.00</b></p>
+  <p><i class="fa fa-heart" style="font-size:36px;"></i> <i class="fa fa-shopping-bag" style="font-size: 36px; position: 10px;"></i> 
 </div>
-  <div class="header">
-  <h3></h3>
 </div>
-  
+<div class="Filter">
+  <label for="brand">Brand:</label>
+  <select id="brand">
+    <option value="">All</option>
+    <option value="Nike">Nike</option>
+    <option value="Adidas">Adidas</option>
+    <option value="Jordan">Jordan</option>
+  </select>
+</div>
+
+<aside id="shopping-bag">
+  <h2>Shopping Bag</h2>
+  <ul id="shopping-bag-items"></ul>
+</aside>
+
+<aside id="wishlist">
+  <h2>Wishlist</h2>
+  <ul id="wishlist-items"></ul>
+</aside>
+
+<div id="language-selector">
+  <select id="language" onchange=changeLanguage(this.value)>
+    <option value="en">English</option>
+    <option value="fr">French</option>
+    <option value="es">Spanish</option>
+  </select>
+</div>
+
   <script src="homepage.js"></script>
 </body>
-
 </html>

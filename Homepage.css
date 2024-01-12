@@ -57,3 +57,87 @@ body{
   top: 12px;
   transform: rotate(-45deg);
 }
+.Featured_Products{
+  padding: 0.1px;
+  text-align: center;
+  background: #f5eded;
+  color: black;
+  font-size: 13px;
+  font-family: sans-serif;
+  top: 20px;
+  
+
+}
+
+.Product1{
+    display:list-item; 
+    margin-bottom: 10px;
+  }
+  .Product2{
+    display:list-item; 
+    margin-bottom: 30px;
+    
+      display: inline-block;
+    
+  }
+
+ #wishlist {
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+   top: 155px; 
+   right: 0; 
+   width: 250px; 
+   height: 500px; 
+   background-color: rgb(255, 234, 195); 
+   text-align: center;
+   color:black;
+ }
+  
+ #shopping-bag {
+  position: absolute;
+  right: 260px;
+  top: 155px;
+  width: 250px;
+  height: 500px;
+  background-color: rgb(198, 216, 255);
+  text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#shopping-bag h2 {
+  color: black;
+  margin: 0;
+  padding: 10px;
+}
+
+#language-selector {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
+  font-size: 18px;
+  z-index: 9999;
+}
+
+#language-selector select {
+  padding: 5px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.Filter {
+  width: 300px;
+  height: 40px;
+  size: 15px;
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 30px;
+  background-color: lightgrey;
+  color:black;
+}
+
+#brand{
+  font-size: 30px;
+}

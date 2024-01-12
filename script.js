@@ -16,7 +16,7 @@ firebase.initializeApp(firebaseConfig);
 var database = firebase.database()
 
 
-//Class for users
+//Class for Users
 class User {
     constructor(name, email, password) {
       this.name = name;
@@ -36,3 +36,13 @@ class User {
   })
       
 }}}
+
+//Login Validation with firebase realtime database
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const emailisValid=email.value
+    const passwordisValid=email.value
+    if ( emailisValid == email.value === database &&  passwordisValid == password.value === database)
+          alert("Your Email or Password is incorrect")
+     
+  });
